@@ -1,5 +1,8 @@
 # Republia-Times
 
+* the original website is here: http://ludumdare.com/compo/ludum-dare-23-warmup/?action=preview&uid=11080
+* The license (As stated in License.md) is CC-BY-NC-ND
+
 ## Known Issues
 
 * News item "New fall TV programming will focus on [GOV]'s rebuilding" (newsitem_construct63_1) will appear on the newspaper as "Stars Dance For Vets!" (newsitem_construct62_2) instead of "Fall TV Revealaed!" (newsitem_construct63_2). Please ignore the issue and translate normally.
