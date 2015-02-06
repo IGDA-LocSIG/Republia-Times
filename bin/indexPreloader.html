@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>FlixelGame</title>
+	<meta name="description" content="" />
+	
+	<script src="js/swfobject.js"></script>
+	<style>
+		html, body { height:100%; overflow:hidden; }
+		body { margin:0; }
+	</style>
+</head>
+<body>
+<script>
+	function insertFlash(val)
+	{
+		var flashvars = {};
+		flashvars.lang = val;
+		flashvars.id = "1";
+		var params = {
+			menu: "false",
+			scale: "noScale",
+			allowFullscreen: "true",
+			allowScriptAccess: "sameDomain",
+			bgcolor: "",
+			wmode: "direct" // can cause issues with FP settings & webcam
+		};
+		var attributes = {
+			id:"FlixelGamePreloader"
+		};
+		swfobject.embedSWF(
+			"FlixelGamePreloader.swf", 
+			"altContent", "100%", "100%", "10.0.0", 
+			"expressInstall.swf", 
+			flashvars, params, attributes);
+	}
+	
+	function onLangSelect(val)
+	{
+		insertFlash(val);
+	}
+	</script>
+	<div id="altContent">
+    	<table width="100%">
+        	<tr align="center">
+            	<td align="center">Choose Language:</td>
+            </tr>
+            <tr align="center">
+            	<td align="center">
+                	<form>
+                    	<select onChange="onLangSelect(this.value);">
+                        	<option>-select-</option>
+                           	<option value="it">Italian</option>
+                        </select>
+                    </form>
+                </td>
+            </tr>
+        </table>
+	</div>
+</body>
+</html>
