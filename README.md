@@ -1,5 +1,7 @@
 # Republia-Times
 
+Republia Times was created by Lucas Pope @dukope
+
 * the original website is here: http://ludumdare.com/compo/ludum-dare-23-warmup/?action=preview&uid=11080
 * The license (As stated in License.md) is CC-BY-NC-ND
 
