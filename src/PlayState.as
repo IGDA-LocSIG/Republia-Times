@@ -15,6 +15,7 @@ package
 		
 		private var endDayButton:FlxButton;
 		private var speed:Number;
+		private var coverClockText:FlxText;
 		
 		private var dragText:FlxText;
 		private var newsFeedText:FlxText;
@@ -54,6 +55,11 @@ package
 			endDayButton.labelOffset = new FlxPoint((endDayButton.width - endDayButton.label.textWidth-4) / 2, (endDayButton.height - endDayButton.label.textHeight-4) / 2);
 			add(endDayButton);
 			
+			coverClockText = new FlxText(5, 80, 70);
+			coverClockText.setFormat("DEFAULTF", 8, 0xffffff, "left",0,0,true);
+			coverClockText.text = LocaleClass.loc["readership_tostr1"];
+			add(coverClockText);
+
 			statMeters = new StatMeters(3, 240);
 			add(statMeters);
 			
